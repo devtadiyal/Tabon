@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+ >
+
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginBottom="1dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="0dp"
+        android:gravity="center_vertical">
+
+
+        <ImageButton
+            android:id="@+id/back4"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimaryDark"
+            android:src="@drawable/back" />
+
+
+        <TextView
+            android:id="@+id/textView11"
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Table Members"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/skip"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignEnd="@+id/back4"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:layout_alignRight="@+id/back4"
+            android:background="@color/colorPrimaryDark"
+            android:text="Skip"
+
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llView"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="4"
+android:visibility="gone"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="wrap_content">
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:textAllCaps="false"
+    android:id="@+id/t1"
+    android:singleLine="true"
+    android:layout_margin="@dimen/_5sdp"
+    android:drawableRight="@android:drawable/ic_delete"
+    android:background="@drawable/circle"
+    android:layout_height="wrap_content"
+    android:text=""/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/t2"
+            android:singleLine="true"
+            android:textAllCaps="false"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/circle"
+            android:drawableRight="@android:drawable/ic_delete"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/t3"
+            android:layout_margin="@dimen/_5sdp"
+            android:textAllCaps="false"
+            android:singleLine="true"
+            android:gravity="center"
+            android:drawableRight="@android:drawable/ic_delete"
+            android:background="@drawable/circle"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:singleLine="true"
+            android:id="@+id/t4"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center"
+            android:background="@drawable/circle"
+            android:layout_height="wrap_content"
+            android:text="4"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:id="@+id/txt_filter"
+        android:hint="Type Name or Number"
+        android:layout_margin="@dimen/_5sdp"
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        android:background="@android:drawable/editbox_background_normal"
+        android:layout_below="@+id/llView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_load_progress"
+        android:layout_below="@+id/txt_filter"
+        android:text="Loading..."
+        />
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_load_progress"
+        android:layout_above="@+id/ll"
+        android:id="@+id/lst_contacts_chooser"
+    />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_done"
+            android:background="@drawable/button_selector2"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textSize="@dimen/_14sdp"
+            android:textAllCaps="false"
+android:layout_marginBottom="@dimen/_15sdp"
+            android:text="Continue"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

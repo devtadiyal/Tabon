@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_contact_picker"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".contacts.contactpicker.ui.ContactPickerFragment"
+    tools:showIn="@layout/activity_contact_picker">
+
+    <com.hootsuite.nachos.NachoTextView
+        android:id="@+id/nachoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/rounded_white"
+        android:drawableEnd="@drawable/ic_search"
+        android:drawableRight="@drawable/ic_search"
+        android:hint="@string/action_search"
+        android:paddingEnd="@dimen/_16sdp"
+        android:paddingLeft="@dimen/_16sdp"
+        android:paddingRight="@dimen/_16sdp"
+        android:paddingStart="@dimen/_16sdp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/cp_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/nachoTextView" />
+
+
+</RelativeLayout>

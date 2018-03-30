@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.saffron.tabon">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".MyApplication"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/MyMaterialTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".activity.HomeScreenActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".login.SignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".signup.NumberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".signup.SignupActivityOld"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".signup.VerifyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".signup.OTPActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".signup.EmailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".signup.PasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:screenOrientation="portrait">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".login.ForgotPassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".signup.SubmitActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".orders.OrdersPagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".orders.TabOnCodeGeneratorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".orders.ThankYouActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".contacts.contactpicker.ui.ContactPickerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".placecomplete.PlaceCompleteActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAzG0yemsbjeF38cUsC96mYDtirHi67hXY" />
+
+        <activity android:name=".contacts.ContactsPickerActivity" />
+        <activity android:name=".contacts.MainActivity1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".contacts.PeopleOrderActivity"
+            android:label="@string/title_activity_people_order"
+            android:theme="@style/MyMaterialTheme" />
+        <activity android:name=".contacts.PayBillActivity" />
+        <activity android:name=".contacts.BillSplitActivity" />
+        <activity android:name=".contacts.TotalBillActivity" />
+        <activity android:name=".contacts.AddOfferActivity"
+            android:theme="@style/AppTheme.Dialog"  ></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <!--Material letter / selected-->
+    <ImageSwitcher
+        android:id="@+id/cp_imageContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp">
+
+        <com.github.ivbaranov.mli.MaterialLetterIcon
+            android:id="@+id/letterIcon"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            app:mli_letter_color="@color/white" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/cp_ivSelected"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@color/materialGreen"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:scaleType="center"
+            android:src="@drawable/ic_done"
+            android:visibility="gone"
+            app:riv_corner_radius="30dip"
+            app:riv_mutate_background="true"
+            tools:ignore="ContentDescription" />
+
+    </ImageSwitcher>
+
+
+    <!--Expandable area-->
+    <LinearLayout
+        android:id="@+id/cp_clickArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/_16sdp"
+        android:paddingEnd="@dimen/_16sdp"
+        android:paddingRight="@dimen/_16sdp"
+        android:paddingTop="@dimen/_16sdp">
+
+        <!--Selected icon-->
+        <ImageView
+            android:id="@+id/cp_ivSelectedComm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:src="@drawable/ic_email"
+            tools:ignore="ContentDescription" />
+
+        <!--Expand arrow-->
+        <ImageView
+            android:id="@+id/cp_arrowExpand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_expand"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <!--Main content-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/cp_imageContainer"
+        android:layout_toLeftOf="@id/cp_clickArea"
+        android:layout_toRightOf="@id/cp_imageContainer"
+        android:layout_toStartOf="@id/cp_clickArea"
+        android:orientation="vertical">
+
+        <!--DisplayName-->
+        <TextView
+            android:id="@+id/tvDisplayName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:ellipsize="end"
+            android:text="kebckwhbvjhdsbjchbsjv"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="@dimen/_14sdp" />
+
+        <!--Communication-->
+        <TextView
+            android:id="@+id/tvCommunication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDisplayName"
+            android:ellipsize="end"
+            android:text="kbjewhvbjwehbvj" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

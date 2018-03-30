@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.saffron.tabon.contacts.BillSplitActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical">
+
+
+        <ImageButton
+            android:id="@+id/back4"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimaryDark"
+            android:src="@drawable/back" />
+
+
+        <TextView
+            android:id="@+id/textView11"
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/skip"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Bill Split"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/skip"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignEnd="@+id/back4"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@+id/back4"
+            android:background="#fff"
+            android:contentDescription="TODO"
+            android:paddingEnd="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/shopping_bag"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_20sdp"
+            android:textColor="@color/black"
+            android:id="@+id/total"
+            android:layout_alignParentLeft="true"
+            android:text="Total Bill"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13sdp"
+            android:id="@+id/remain"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_below="@+id/total"
+            android:textColor="#615f5f"
+            android:layout_alignParentLeft="true"
+            android:text="Remaining"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13sdp"
+            android:layout_below="@+id/remain"
+            android:textColor="#615f5f"
+            android:layout_alignParentLeft="true"
+            android:text="Paid Amount"/>
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/_20sdp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="2195"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13sdp"
+            android:id="@+id/t11"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_below="@+id/amount"
+            android:textColor="#615f5f"
+            android:layout_alignParentRight="true"
+            android:text="560"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13sdp"
+            android:id="@+id/t12"
+            android:layout_below="@+id/t11"
+            android:textColor="#615f5f"
+            android:layout_alignParentRight="true"
+            android:text="891"/>
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="#969393"
+        android:layout_height="@dimen/_35sdp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Members"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/_13sdp"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textColor="@color/white"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment mode"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/white"
+            />
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_10sdp"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VIEW BILL"
+            android:id="@+id/viewbill"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/_15sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESET"
+            android:id="@+id/reset"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/_15sdp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_21sdp"
+            android:layout_marginRight="@dimen/_21sdp"
+            android:background="@drawable/button_selector2"
+            android:text="Share Bill"
+            android:textSize="@dimen/_14sdp"
+            android:textAllCaps="false"
+            android:id="@+id/sharebill"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white"
+            />
+
+
+    </RelativeLayout>
+</LinearLayout>

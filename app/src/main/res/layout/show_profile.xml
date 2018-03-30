@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:id="@+id/pic"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:src="@drawable/men3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Amit Kumar"
+        android:id="@+id/name"
+        android:layout_below="@+id/pic"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/b1"
+        android:text="Make Group Admin"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/button_selector2"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_below="@+id/name"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/b2"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Remove"
+        android:background="@drawable/grey_button"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_below="@+id/b1"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_alignParentRight="true"
+        android:text="Cancel"
+        android:layout_marginTop="@dimen/_15sdp"
+       android:layout_marginRight="@dimen/_40sdp"
+        android:id="@+id/cancel"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:textSize="@dimen/_14sdp"
+        android:layout_below="@+id/b2"/>
+</RelativeLayout>

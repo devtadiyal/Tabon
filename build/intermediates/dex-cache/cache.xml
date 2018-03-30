@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/lincoln/AndroidStudioProjects/MaterialDesign/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="/Users/lincoln/AndroidStudioProjects/MaterialDesign/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-569c959ddae4edb2c4eda920e96cbe2a76323416.jar" />
+    </item>
+    <item
+        jar="/Users/lincoln/AndroidStudioProjects/MaterialDesign/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="5b37cf49773f7f17aca9830efd3053b0cac56728">
+        <dex dex="/Users/lincoln/AndroidStudioProjects/MaterialDesign/app/build/intermediates/pre-dexed/debug/classes-8c056f324e52b4bc37499a407b1055fc7fd0ac6f.jar" />
+    </item>
+    <item
+        jar="/Users/lincoln/Softwares/adt-bundle-mac-x86_64-20140702/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="/Users/lincoln/AndroidStudioProjects/MaterialDesign/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-1615fa634ccae2651ff085eb895cb15b40d534a2.jar" />
+    </item>
+    <item
+        jar="/Users/lincoln/AndroidStudioProjects/MaterialDesign/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="/Users/lincoln/AndroidStudioProjects/MaterialDesign/app/build/intermediates/pre-dexed/debug/classes-17a695ed657d0ab69323ae2d500a5a6f486a8218.jar" />
+    </item>
+    <item
+        jar="/Users/lincoln/AndroidStudioProjects/MaterialDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="/Users/lincoln/AndroidStudioProjects/MaterialDesign/app/build/intermediates/pre-dexed/debug/classes-1f3d6fb676098a1194b191f32b2d8bde34b67c00.jar" />
+    </item>
+
+</items>

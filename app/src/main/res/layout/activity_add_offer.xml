@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    tools:context="com.saffron.tabon.contacts.AddOfferActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+
+        <ImageButton
+            android:id="@+id/back4"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:visibility="gone"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimaryDark"
+            android:src="@drawable/back" />
+
+
+        <TextView
+            android:id="@+id/textView11"
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/skip"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Add Offer"
+            android:textColor="#4b4848"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/skip"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignEnd="@+id/back4"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@+id/back4"
+            android:background="#fff"
+            android:contentDescription="TODO"
+            android:paddingEnd="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/shopping_bag"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:id="@+id/ok"
+            android:layout_marginLeft="@dimen/_100sdp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:id="@+id/cancel"
+            android:layout_marginLeft="@dimen/_60sdp"
+            android:textColor="#393838"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

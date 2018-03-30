@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.saffron.tabon.contacts.PayBillActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical">
+
+
+        <ImageButton
+            android:id="@+id/back4"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimaryDark"
+            android:src="@drawable/back" />
+
+
+        <TextView
+            android:id="@+id/textView11"
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/skip"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Nature by Punjabi"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/skip"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignEnd="@+id/back4"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@+id/back4"
+            android:background="#fff"
+            android:contentDescription="TODO"
+            android:paddingEnd="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/shopping_bag"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="4"
+        android:gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="@dimen/_35sdp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:layout_weight="1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Items List"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_3sdp"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_2sdp"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sub Total"
+                android:layout_centerInParent="true"
+                android:textColor="#181717"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2145"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:textColor="#181717"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_2sdp"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discount on (item number)"
+                android:layout_centerInParent="true"
+                android:textColor="#181717"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="42.5"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:textColor="#181717"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_2sdp"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GST %"
+                android:layout_centerInParent="true"
+                android:textColor="#181717"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="141.2"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:textColor="#181717"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:layout_centerInParent="true"
+                android:textColor="#181717"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2195"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:textColor="#181717"
+                />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_21sdp"
+            android:layout_marginRight="@dimen/_21sdp"
+            android:background="@drawable/button_selector2"
+            android:text="Pay"
+            android:textSize="@dimen/_14sdp"
+            android:textAllCaps="false"
+            android:id="@+id/pay"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white"
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

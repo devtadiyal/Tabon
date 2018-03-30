@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup.NumberActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="#fff">
+
+
+        <ImageButton
+            android:id="@+id/back4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#fff"
+            android:contentDescription="TODO"
+            android:src="@drawable/back" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@+id/back4"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Skip"
+            android:textColor="#009DF7"
+            android:textSize="@dimen/_14sdp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_33sdp"
+        android:gravity="center"
+        android:text="What's your number ?"
+        android:textSize="@dimen/_26sdp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_115sdp"
+        android:backgroundTint="@color/edit_text_tint"
+        android:ems="10"
+        android:hint="Enter password"
+        android:inputType="textPersonName"
+        android:textCursorDrawable="@null"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:backgroundTint="@color/edit_text_tint"
+        android:ems="10"
+        android:hint="Enter valid phone number"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/_14sdp" />
+
+    <Button
+        android:id="@+id/next4"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_38sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/next"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/_14sdp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/_33sdp"
+        android:layout_marginRight="@dimen/_33sdp"
+        android:layout_marginTop="@dimen/_11sdp"
+        android:gravity="center"
+        android:text="This is to help us verify your account"
+        android:textColor="@color/toolbar_text_color"
+        android:textSize="@dimen/_14sdp" />
+
+
+</RelativeLayout>
